@@ -15,3 +15,11 @@ spring:
     defer-datasource-initialization: true
     hibernate:
       ddl-auto: update
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /doc/api-docs
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui.html
