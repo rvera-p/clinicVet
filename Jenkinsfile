@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    tools {
-        maven 'Maven'
-        jdk 'JDK17'
-    }
 
     stages {
         stage('Clone Repository') {
@@ -21,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Desplegando la aplicación...'
-                sh 'java -jar target/*.jar'
+                sh 'java -jar target/clinicVet-0.0.1.jar'
             }
         }
     }
