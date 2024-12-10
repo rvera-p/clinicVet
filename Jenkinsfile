@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Compilando el proyecto...'
-                bat 'mvn clean install'
+                bat '.\\mvnw clean install'
             }
         }
 
